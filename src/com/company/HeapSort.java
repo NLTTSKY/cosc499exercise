@@ -1,11 +1,7 @@
 package com.company;
 
 class HeapSort{
-	/**
-	 * @len ��¼ÿ��ѭ�����´����鳤��
-	 * @heap ���ܶ����������
-	 * @temp ���ڽ���Ԫ��λ��ʱ�ĸ���ָ��
-	 */
+
 	private int len;
 	private int[] heap;
 	private int temp;
@@ -21,9 +17,8 @@ class HeapSort{
 		System.out.println();
 	}
 	
-	public int[] ascOrder() {//�������������������
+	public int[] ascOrder() {
 		while(len>=2) {
-			//��һ��
 			for(int i=(len/2-1);i>=0 && i<len;i--) {
 				ascNode(i);
 			}
@@ -34,7 +29,7 @@ class HeapSort{
 		}
 		return heap;
 	}
-	public void ascNode(int n) {//��ҳ�ӽڵ�ıȽϺͽ�������
+	public void ascNode(int n) {
 		temp=heap[n];
 		if((2*n+1)<len && temp<heap[2*n+1]) {
 			heap[n]=heap[2*n+1];
@@ -47,7 +42,7 @@ class HeapSort{
 			temp=heap[n];
 		}
 	}
-	public int[] desOrder() {//С����������齵������
+	public int[] desOrder() {
 		while(len>=2) {
 			for(int i=(len/2-1);i>=0 && i<len;i--) {
 				desNode(i);
