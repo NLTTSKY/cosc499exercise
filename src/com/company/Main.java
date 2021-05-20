@@ -5,9 +5,7 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        /**
-         * 增加注释
-         */
+
 //		int[] arry = {5,6,2,3,9,7,1};
         int[] arry = {12,2,16,30,8,28,4,10,20,6,18};
         HeapSort heap = new HeapSort();
